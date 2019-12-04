@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "dataset_name": {
+      "type": "string"
+    },
+    "pmid": {
+      "type": "string"
+    },
+    "study_accession": {
+      "description": "TODO",
+      "type": "string"
+    },
+    "study_accession_db": {
+      "description": "TODO",
+      "type": "string"
+    }
+  },
+  "required": []
+}

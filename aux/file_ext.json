@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "sequencing_platform": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "number_reads": {
+            "description": "TODO",
+            "type": "number"
+        },
+        "number_bases": {
+            "description": "TODO",
+            "type": "number"
+        },
+        "minimum_read_length": {
+            "description":"TODO",
+            "type":"number"
+        },
+        "median_read_length": {
+            "description": "TODO",
+            "type": "number"
+        },
+        "genotype": {
+            "description": "TODO",
+            "enum": ["16s"]
+        }
+    },
+    "required": []
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about a subject, if present",
+    "additionalProperties": true,
+    "required": [
+        "subject_id","subject_type"
+    ],
+    "title": "subject",
+    "name": "subject",
+    "type": "object",
+    "$ref": "subject_ext",
+    "properties": {
+        "subject_id":{
+            "description": "A unique ID for the subject.",
+            "type": "string",
+            "user_friendly": "Subject ID",
+            "guidelines": "Subject ID should have no spaces."
+        },
+        "subject_type":{
+            "description": "A one or two word categorization of the subject.",
+            "type": "string",
+            "user_friendly": "Subject type"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "subject_accession": {
+      "description": "TODO",
+      "type": "string"
+    },
+    "subject_accession_alt": {
+      "description": "TODO",
+      "type": "string"
+    },
+    "subject_accession_db": {
+      "description": "TODO",
+      "type": "string"
+    },
+    "race": {
+      "description": "TODO",
+      "enum": ["white","african_american", "asian_pacific_islander", "native_american", "more_than_one", "other"]
+    },
+    "gender":{
+      "description": "TODO",
+      "enum": ["m", "f", "other"]
+    },
+    "family": {
+      "description": "TODO",
+      "type": "string"
+    },
+    "family_supp": {
+      "description":"TODO",
+      "type": "string"
+    },
+    "age_at_diagnosis": {
+      "description":"",
+      "type": "number"
+    },
+    "age_at_diagnosis.cat": {
+      "description":"",
+      "type": "string"
+    }
+  },
+  "required": ["subject_accession"]
+}

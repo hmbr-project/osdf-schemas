@@ -1,0 +1,23 @@
+{
+  "*": {
+  },
+  "file": {
+      "computed_from": [ "event" ]
+  },
+  "biomaterial": {
+      "collected_from": [ "event" ],
+      "generated_from": [ "event" ]
+  },
+  "event": {
+      "by": [ "subject"],
+      "sequencing_of": ["biomaterial"],
+      "processed": ["biomaterial"]
+  },
+  "subject": {
+      "participates_in": [ "study" ]
+  },
+  "study": {
+      "part_of": [ "study" ],
+      "subset_of": [ "study" ]
+  }
+}

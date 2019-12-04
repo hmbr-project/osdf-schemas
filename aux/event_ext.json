@@ -1,0 +1,142 @@
+{
+  "type": "object",
+  "properties": {
+    "disease": {
+      "description":"",
+      "enum": ["CD","UC","IC","FAP","control"]
+    },
+    "control": {
+      "description":"",
+      "enum": ["HC","nonIBD"]
+    },
+    "ibd_subtype": {
+      "description":"",
+      "enum": ["iCD","cCD","CD","UC","IC","FAP"]
+    },
+    "ibd_subtype_additional": {
+      "description":"",
+      "type":"string"
+    },
+    "location": {
+      "description":"",
+      "enum": ["L1","L2","L3","L4","L1+L2","L1+L3","L1+L4","L2+L3","L2+L4","L3+L4"]
+    },
+    "uc_subgroups": {
+      "description":"",
+      "enum": ["E1","E2","E3"]
+    },
+    "behavior": {
+      "description":"",
+      "enum": ["B1","B2","B3"]
+    },
+    "perianal": {
+      "description":"",
+      "type": "boolean"
+    },
+    "age": {
+      "description":"",
+      "type": "number"
+    },
+    "age_category": {
+      "description":"",
+      "type": "string"
+    },
+    "bmi": {
+      "description":"",
+      "type": "number"
+    },
+    "alcohol": {
+      "description":"",
+      "type": "boolean"
+    },
+    "smoke": {
+      "description":"",
+      "enum": ["former","current","never"]
+    },
+    "location_name": {
+      "description":"",
+      "type": "string"
+    },
+    "hbi": {
+      "description":"",
+      "type": "string"
+    },
+    "sccai": {
+      "description":"",
+      "type": "string"
+    },
+    "calprotectin": {
+      "description":"",
+      "type": "string"
+    },
+    "pcdai": {
+      "description":"",
+      "type": "string"
+    },
+    "antibiotics": {
+      "description":"",
+      "type": "boolean"
+    },
+    "antibiotics_supp": {
+      "description":"",
+      "type": "string"
+    },
+    "immunosuppressants": {
+      "description":"",
+      "type": "boolean"
+    },
+    "immunosuppressants_supp": {
+      "description":"",
+      "type": "string"
+    },
+    "steroids": {
+      "description":"",
+      "type": "boolean"
+    },
+    "steroids_supp": {
+      "description":"",
+      "type": "string"
+    },
+    "mesalamine_5ASA": {
+      "description":"",
+      "type": "boolean"
+    },
+    "mesalamine_5ASA_supp": {
+      "description":"",
+      "type": "string"
+    },
+    "method_mbx": {
+      "description":"",
+      "type": "string"
+    },
+    "biologics": {
+      "description":"",
+      "type": "boolean"
+    },
+    "biologics_supp": {
+      "description":"",
+      "type": "string"
+    },
+    "time_point": {
+      "description":"",
+      "type": "string"
+    },
+    "time_point_supp": {
+      "description":"",
+      "type": "string"
+    },
+    "l.cat": {
+      "description": "TODO",
+      "type": "string"
+    },
+    "e.cat": {
+      "description": "TODO",
+      "type": "string"
+    },
+    "b.cat": {
+      "description": "TODO",
+      "type": "string"
+    }
+  },
+  "required": []
+}

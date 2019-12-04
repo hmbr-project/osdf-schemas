@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about the study.",
+    "additionalProperties": true,
+    "required": [
+        "study_short_name"
+    ],
+    "title": "Study core",
+    "name": "study_core",
+    "type": "object",
+    "$ref": "study_ext",
+    "properties": {
+        "study_short_name": {
+            "description": "A short name for the study.",
+            "type": "string",
+            "example": "CoolOrganStudy.",
+            "user_friendly": "Study label",
+            "guidelines": "Study label is a short label by which you refer to the study. It should have no spaces and should be fewer than 50 characters."
+        },
+        "study_title": {
+            "description": "An official title for the study.",
+            "type": "string",
+            "example": "Study of single cells in the human body.",
+            "user_friendly": "Study title",
+            "guidelines": "Study title should be fewer than 30 words, such as a title of a grant proposal or a publication."
+        },
+        "study_description": {
+            "description": "A longer description of the study which includes research goals and experimental approach.",
+            "type": "string",
+            "user_friendly": "Study description",
+            "guidelines": "Study description should be fewer than 300 words, such as an abstract from a grant application or publication."
+        }
+    }
+}

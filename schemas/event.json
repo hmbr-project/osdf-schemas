@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information relevant to how a biomaterial or file was converted into another biomaterial or file.",
+    "additionalProperties": true,
+    "required": [
+        "event_id",
+        "event_name",
+        "event_description"
+    ],
+    "title": "Event core",
+    "name": "event_core",
+    "type": "object",
+    "$ref": "event_ext",
+    "properties": {
+        "event_id": {
+            "description": "A unique ID for the event.",
+            "type": "string",
+            "user_friendly": "Event ID"
+        },
+        "event_name": {
+            "description": "A short, descriptive name for the event that need not be unique.",
+            "type": "string",
+            "user_friendly": "Event name"
+        },
+        "event_description": {
+            "description": "A general description of the event.",
+            "type": "string",
+            "user_friendly": "Event description"
+        }
+    }
+}
+

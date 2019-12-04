@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Information about any biological material that was generated/used in the project including everything from a whole organism to subcellular components.",
+    "additionalProperties": true,
+    "required": [
+        "biomaterial_id"
+    ],
+    "title": "Biomaterial",
+    "name": "biomaterial",
+    "type": "object",
+    "$ref": "biomaterial_ext",
+    "properties": {
+            "biomaterial_id":{
+                "description": "A unique ID for the biomaterial.",
+                "type": "string",
+                "user_friendly": "Biomaterial ID"
+            },
+            "biomaterial_name": {
+                "description": "A short, descriptive name for the biomaterial that need not be unique.",
+                "type": "string",
+                "user_friendly": "Biomaterial name"
+            },
+            "biomaterial_description": {
+                "description": "A general description of the biomaterial.",
+                "type": "string",
+                "user_friendly": "Biomaterial description"
+            }
+    },
+    "required" : [ "biomaterial_id" ]
+}
+

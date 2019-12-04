@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "sample_accession": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "sample_accession_alt": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "sample_accession_db": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "sample_type": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "batch": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "database": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "body_site": {
+            "description": "TODO",
+            "enum": ["ileum", "colon", "rectum"]
+        },
+        "body_site_additional": {
+            "description": "TODO",
+            "enum": ["ileum", "colon", "rectum", "terminal ileum", "Pouch", "PPI", "Sigmoid", "TI", "Rectum", "Ileum",
+                     "Descending (left-sided) colon", "Sigmoid Colon", "Transverse colon", "Ascending (right-sided) colon",
+                     "Cecum", "Terminal ileum", "J-Pouch", "Neo-ileum" ]
+        },
+        "body_site_supp": {
+            "description": "TODO",
+            "type": "string"
+        },
+        "extraction_kit": {
+            "description": "TODO",
+            "enum": ["gnome", "illuminakit", "mobio", "norgenbiotek", "qiagen"]
+        }
+    },
+    "required": []
+}
